@@ -9,6 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let firstNumber = 7
+    let secondNumber = 10
+
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var textFieldForDividend: UITextField!
+    @IBOutlet weak var textFielfForDivider: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

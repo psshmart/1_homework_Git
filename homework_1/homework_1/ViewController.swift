@@ -11,9 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        printingDifference(minuend: 5, subtrahend: 2)
     }
 
+    private func printingDifference(minuend: Int, subtrahend: Int) {
+        let result = minuend - subtrahend
+        print("\(result)")
+    }
 
 }
 

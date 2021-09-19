@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqv-UX-jXP">
-                                <rect key="frame" x="183" y="441" width="48" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-			       <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La3-eS-wnK">
                                 <rect key="frame" x="207" y="158" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -67,9 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Vqv-UX-jXP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D3h-Xt-tuo"/>
-                            <constraint firstItem="Vqv-UX-jXP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eZG-c0-eAj"/>
-<constraint firstItem="Kaa-5G-iUA" firstAttribute="top" secondItem="2Ep-vy-mJ0" secondAttribute="bottom" constant="8" symbolic="YES" id="3NB-IQ-IHH"/>
+                            <constraint firstItem="Kaa-5G-iUA" firstAttribute="top" secondItem="2Ep-vy-mJ0" secondAttribute="bottom" constant="8" symbolic="YES" id="3NB-IQ-IHH"/>
                             <constraint firstItem="Kaa-5G-iUA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Idr-8S-9LM"/>
                             <constraint firstItem="La3-eS-wnK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="JGU-JT-SoQ"/>
                             <constraint firstItem="0bf-6g-P1t" firstAttribute="top" secondItem="La3-eS-wnK" secondAttribute="bottom" constant="49" id="KBs-h1-AM9"/>
@@ -84,17 +76,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="sumLabel" destination="Vqv-UX-jXP" id="R1j-jn-pBI"/>
-			<outlet property="resultLabel" destination="La3-eS-wnK" id="5FW-5b-s2E"/>
+                        <outlet property="resultLabel" destination="La3-eS-wnK" id="5FW-5b-s2E"/>
                         <outlet property="textFieldForDividend" destination="4KA-vt-mBa" id="B6k-wo-0yW"/>
                         <outlet property="textFielfForDivider" destination="Kaa-5G-iUA" id="iH5-kM-qvU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="-214.49275362318843" y="51.5625"/>
-
         </scene>
     </scenes>
     <resources>

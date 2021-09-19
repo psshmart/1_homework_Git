@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homework_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La3-eS-wnK">
+                                <rect key="frame" x="207" y="158" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNy-W2-TRA">
+                                <rect key="frame" x="185.5" y="375" width="43" height="30"/>
+                                <state key="normal" title="Divide"/>
+                                <connections>
+                                    <action selector="divideAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6d-bP-xMa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4KA-vt-mBa">
+                                <rect key="frame" x="87" y="236" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="84Z-ml-w1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-5G-iUA">
+                                <rect key="frame" x="87" y="322" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="eZV-Il-QF1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dividend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bf-6g-P1t">
+                                <rect key="frame" x="173" y="207" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ep-vy-mJ0">
+                                <rect key="frame" x="180" y="293" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kaa-5G-iUA" firstAttribute="top" secondItem="2Ep-vy-mJ0" secondAttribute="bottom" constant="8" symbolic="YES" id="3NB-IQ-IHH"/>
+                            <constraint firstItem="Kaa-5G-iUA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Idr-8S-9LM"/>
+                            <constraint firstItem="La3-eS-wnK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="JGU-JT-SoQ"/>
+                            <constraint firstItem="0bf-6g-P1t" firstAttribute="top" secondItem="La3-eS-wnK" secondAttribute="bottom" constant="49" id="KBs-h1-AM9"/>
+                            <constraint firstItem="La3-eS-wnK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="McT-eQ-Rzh"/>
+                            <constraint firstItem="0bf-6g-P1t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WVW-4t-jMt"/>
+                            <constraint firstItem="MNy-W2-TRA" firstAttribute="top" secondItem="Kaa-5G-iUA" secondAttribute="bottom" constant="19" id="Zqp-tg-kXD"/>
+                            <constraint firstItem="MNy-W2-TRA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zt8-1v-CUV"/>
+                            <constraint firstItem="2Ep-vy-mJ0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iZW-Cg-Ww3"/>
+                            <constraint firstItem="4KA-vt-mBa" firstAttribute="top" secondItem="0bf-6g-P1t" secondAttribute="bottom" constant="8" symbolic="YES" id="iuf-WY-bTo"/>
+                            <constraint firstItem="4KA-vt-mBa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ric-7m-LZe"/>
+                            <constraint firstItem="2Ep-vy-mJ0" firstAttribute="top" secondItem="4KA-vt-mBa" secondAttribute="bottom" constant="23" id="xIA-HF-WUU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="La3-eS-wnK" id="5FW-5b-s2E"/>
+                        <outlet property="textFieldForDividend" destination="4KA-vt-mBa" id="B6k-wo-0yW"/>
+                        <outlet property="textFielfForDivider" destination="Kaa-5G-iUA" id="iH5-kM-qvU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="51.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

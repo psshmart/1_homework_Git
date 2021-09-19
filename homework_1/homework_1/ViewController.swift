@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let firstNumber = 2
+    let secondNumber = 30
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 

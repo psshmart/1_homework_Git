@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     let firstNumber = 5
     let secondNumber = 10
 
-    @IBOutlet weak var sumLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var textFieldForDividend: UITextField!
     @IBOutlet weak var textFielfForDivider: UITextField!
@@ -24,7 +23,6 @@ class ViewController: UIViewController {
         
         let total = sumUp(first: firstNumber, second: secondNumber)
         print(total)
-        sumLabel.text = "Sum = \(total)"
         let result = divideNumbers(dividend: dividend, divider: divider)
         print("\(result)")
     }

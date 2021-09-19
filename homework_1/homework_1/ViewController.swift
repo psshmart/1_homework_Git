@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let firstNumber = 2
-    let secondNumber = 30
 
+    let firstNumber = 5
+    let secondNumber = 10
+
+    @IBOutlet weak var sumLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let total = sumUp(first: firstNumber, second: secondNumber)
+        print(total)
+        sumLabel.text = "Sum = \(total)"
     }
+    
+    private func sumUp(first: Int, second: Int) -> Int {
+            first + second
+        }
 }
 

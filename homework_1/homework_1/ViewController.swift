@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     let firstNumber = 5
     let secondNumber = 10
 
